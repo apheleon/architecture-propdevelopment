@@ -2,9 +2,11 @@
 
 ## Задание 1. Разработка проверочного листа по безопасности данных
 
-1. [лист безопасности](https://drive.google.com/file/d/18fOzqijpji3JlLlzNqRsrGl8K2Y0cNfo/view?usp=sharing "лист безопасности")
+1. [mindmap](https://drive.google.com/file/d/18fOzqijpji3JlLlzNqRsrGl8K2Y0cNfo/view?usp=sharing "лист безопасности")
 
 ## Задание 2. Разработка и заполнение проверочного листа для бизнес-систем
+
+1. В папке проекта task2\task2.md
 
 ## Задание 3. Внешние интеграции
 

@@ -1,0 +1,1 @@
+kubectl apply -f rbac-setup.yaml

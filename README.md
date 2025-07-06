@@ -1,2 +1,21 @@
-# architecture-propdevelopment
-sprint 5
+# Sprint 5
+
+## Задание 1. Разработка проверочного листа по безопасности данных
+
+1. [mindmap](https://drive.google.com/file/d/18fOzqijpji3JlLlzNqRsrGl8K2Y0cNfo/view?usp=sharing "лист безопасности")
+
+## Задание 2. Разработка и заполнение проверочного листа для бизнес-систем
+
+1. В папке проекта task2\task2.md
+
+## Задание 3. Внешние интеграции
+
+1. В папке проекта task3\task3.md
+
+## Задание 4. Защита доступа к кластеру Kubernetes
+
+1. В папке проекта task4\task4.md
+
+## Задание 5. Управление трафиком внутри кластера Kubertnetes
+
+1. В папке проекта task5\task5.md

@@ -1,0 +1,37 @@
+@startuml bank
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/refs/heads/master/C4_Container.puml
+
+LAYOUT_TOP_DOWN()
+
+title PropDevelopment 
+
+
+Container(AIdomofon, "Интеллектуальный домофон", "управление")
+Container(AIbarrier, "Интеллектуальный шлагбаум", "управление")
+
+
+Person(client, "Клиент", "клиент")
+Person(owner, "Собственник", "клиент, мобильное приложение")
+
+System_Boundary(PropDevelopment, "PropDevelopment") {
+    Container(authentication, "аутентификация", "Go", "login+pass+2fa аутентификация пользователей")
+    Container(authorization, "авторизация", "Go", "авторизация пользователей")
+
+    Container(clientService, "Группа сервисов для клиентов", "Go", "")
+    Container(ownerService, "Группа сервисов ЖКУ", "Go", "")
+}
+
+
+Rel(client, authentication, "апрос на аутентификацию")
+Rel(owner, authentication, "запрос на аутентификацию")
+Rel(authentication, authorization, "запрос на авторизацию и предоставление прав доступа к сервисам")
+
+Rel(authorization, AIdomofon, "доступ")
+Rel(authorization, AIbarrier, "доступ")
+Rel(authorization, clientService, "доступ")
+Rel(authorization, ownerService, "доступ")
+
+Rel(AIdomofon, ownerService, "событие")
+Rel(AIbarrier, ownerService, "событие")
+
+Rel(ownerService, owner, "уведомление")
